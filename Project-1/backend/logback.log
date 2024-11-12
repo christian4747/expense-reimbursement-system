@@ -1,0 +1,78 @@
+07:36:43.549 [main] INFO  c.r.Project_1.Project1Application - Starting Project1Application using Java 17.0.12 with PID 20452 (D:\Revature\Project-1\Project-1\target\classes started by Christian in D:\Revature\Project-1\Project-1)
+07:36:43.552 [main] INFO  c.r.Project_1.Project1Application - No active profile set, falling back to 1 default profile: "default"
+07:36:44.237 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:36:44.273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+07:36:45.078 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7777 (http)
+07:36:45.086 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+07:36:45.088 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07:36:45.089 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+07:36:45.132 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+07:36:45.132 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1533 ms
+07:36:45.259 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07:36:45.330 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+07:36:45.372 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07:36:45.626 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07:36:45.648 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07:36:45.925 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6029f2a4
+07:36:45.926 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07:36:46.648 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07:36:46.746 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:36:47.082 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:36:47.137 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.AuthController.logout(), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/logout"}, produces={}, value={"/logout"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.148 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.AuthController.getCurrentUser(), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/users/current"}, produces={}, value={"/users/current"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.152 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.getAllTickets(), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/all"}, produces={}, value={"/all"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.153 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.getAllUserTickets(), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.153 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.deleteTicket(int), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/{ticketId}"}, produces={}, value={"/{ticketId}"}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.154 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.changeTicketStatus(int,java.lang.String), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/status/{ticketId}"}, produces={}, value={"/status/{ticketId}"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.154 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.changeTicketDescription(int,java.lang.String), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/description/{ticketId}"}, produces={}, value={"/description/{ticketId}"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.155 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.getAllUserPendingTickets(), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/pending"}, produces={}, value={"/pending"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.155 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.TicketController.getAllPendingTickets(), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/pending/all"}, produces={}, value={"/pending/all"}), @org.springframework.web.bind.annotation.GetMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.157 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.UserController.deleteUser(int), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/{userId}"}, produces={}, value={"/{userId}"}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.158 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.revature.controllers.UserController.updateUserRole(int,java.lang.String), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/role/{userId}"}, produces={}, value={"/role/{userId}"}), @org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+07:36:47.416 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+07:36:47.439 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7777 (http) with context path '/api'
+07:36:47.449 [main] INFO  c.r.Project_1.Project1Application - Started Project1Application in 4.183 seconds (process running for 4.782)
+07:37:41.553 [http-nio-7777-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:37:41.553 [http-nio-7777-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07:37:41.555 [http-nio-7777-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+07:42:38.642 [http-nio-7777-exec-10] INFO  com.revature.services.UserService - User with username firstlast registered successfully.
+07:42:48.913 [http-nio-7777-exec-8] INFO  com.revature.services.AuthService - User firstlast has logged in.
+07:43:04.095 [http-nio-7777-exec-6] INFO  com.revature.services.TicketService - User 12 has created new Ticket with ID 27.
+07:43:15.001 [http-nio-7777-exec-4] INFO  com.revature.services.TicketService - User 12 has created new Ticket with ID 28.
+07:43:19.798 [http-nio-7777-exec-8] INFO  com.revature.services.TicketService - Ticket with ID 27 updated its description successfully.
+07:43:22.315 [http-nio-7777-exec-9] INFO  com.revature.services.TicketService - Ticket with ID 28 updated its description successfully.
+07:43:40.847 [http-nio-7777-exec-8] INFO  com.revature.services.AuthService - User manager has logged in.
+07:43:58.915 [http-nio-7777-exec-6] INFO  com.revature.services.TicketService - Ticket with ID 27 updated its status successfully.
+07:45:29.132 [http-nio-7777-exec-9] INFO  com.revature.services.AuthService - User firstlast has logged in.
+07:45:37.023 [http-nio-7777-exec-3] INFO  com.revature.services.TicketService - User 12 has created new Ticket with ID 29.
+07:45:43.396 [http-nio-7777-exec-10] INFO  com.revature.services.AuthService - User manager has logged in.
+07:45:50.797 [http-nio-7777-exec-2] INFO  com.revature.services.TicketService - Ticket with ID 29 deleted successfully.
+07:46:02.886 [http-nio-7777-exec-6] INFO  com.revature.services.AuthService - User firstlast has logged in.
+07:46:14.182 [http-nio-7777-exec-5] INFO  com.revature.services.AuthService - User manager has logged in.
+07:46:21.911 [http-nio-7777-exec-7] INFO  com.revature.services.UserService - User with ID 12 updated with Role manager successfully.
+07:46:27.661 [http-nio-7777-exec-4] INFO  com.revature.services.AuthService - User firstlast has logged in.
+07:46:44.808 [http-nio-7777-exec-7] INFO  com.revature.services.AuthService - User manager has logged in.
+07:46:53.673 [http-nio-7777-exec-3] INFO  com.revature.services.UserService - User with ID 12 deleted successfully.
+09:36:01.600 [http-nio-7777-exec-6] INFO  com.revature.services.UserService - User with username christian.andersen registered successfully.
+09:36:23.239 [http-nio-7777-exec-4] INFO  com.revature.services.AuthService - User christian.andersen has logged in.
+09:37:03.303 [http-nio-7777-exec-1] INFO  com.revature.services.TicketService - User 13 has created new Ticket with ID 30.
+09:37:11.459 [http-nio-7777-exec-3] INFO  com.revature.services.TicketService - Ticket with ID 30 updated its description successfully.
+09:37:32.728 [http-nio-7777-exec-9] INFO  com.revature.services.AuthService - User manager has logged in.
+09:37:53.741 [http-nio-7777-exec-10] INFO  com.revature.services.TicketService - User 2 has created new Ticket with ID 31.
+09:37:59.730 [http-nio-7777-exec-5] INFO  com.revature.services.TicketService - Ticket with ID 31 updated its status successfully.
+09:38:07.797 [http-nio-7777-exec-2] INFO  com.revature.services.TicketService - Ticket with ID 31 deleted successfully.
+09:38:18.171 [http-nio-7777-exec-10] INFO  com.revature.services.TicketService - Ticket with ID 30 updated its status successfully.
+09:38:31.518 [http-nio-7777-exec-7] INFO  com.revature.services.TicketService - Ticket with ID 30 updated its description successfully.
+09:38:59.703 [http-nio-7777-exec-10] INFO  com.revature.services.AuthService - User christian.andersen has logged in.
+09:39:11.397 [http-nio-7777-exec-5] INFO  com.revature.services.TicketService - User 13 has created new Ticket with ID 32.
+09:39:16.484 [http-nio-7777-exec-9] INFO  com.revature.services.TicketService - User 13 has created new Ticket with ID 33.
+09:39:26.647 [http-nio-7777-exec-3] INFO  com.revature.services.AuthService - User manager has logged in.
+09:39:35.209 [http-nio-7777-exec-1] INFO  com.revature.services.UserService - User with ID 13 deleted successfully.
+09:40:31.673 [http-nio-7777-exec-9] INFO  com.revature.services.AuthService - User manager has logged in.
+09:40:42.546 [http-nio-7777-exec-10] INFO  com.revature.services.TicketService - Ticket with ID 13 updated its status successfully.
+09:40:49.270 [http-nio-7777-exec-7] INFO  com.revature.services.TicketService - Ticket with ID 10 updated its status successfully.
+10:14:13.231 [http-nio-7777-exec-4] INFO  com.revature.services.AuthService - User manager has logged in.
+10:48:48.340 [http-nio-7777-exec-7] INFO  com.revature.services.AuthService - User manager has logged in.
+11:14:43.878 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:14:43.888 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:14:43.891 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
